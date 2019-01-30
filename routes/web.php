@@ -20,4 +20,11 @@ Route::get('/help', function(){
     return view('help');
 })->name('help');
 
+Route::get('/help', function(){
+    return view('help');
+})->name('help');
+
 // Voeg hier je eigen routes toe
+Route::get('/laravel-links', 'LinksController@index')->name('links');
+Route::get('/link-toevoegen', 'LinksController@showLinksForm')->name('linktoevoegen');
+Route::post('link-opslaan', 'LinksController@handleLinksForm')->name('linkopslaan');

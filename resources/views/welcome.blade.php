@@ -1,8 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
+    <a href="{{ route('links') }}">Ga naar de laravel linkjes pagina!</a>
     <h1>BAP 203</h1>
     <p><img src="{{ asset('images/programming.jpg') }}" class="img-fluid" alt="Programming"></p>
+    <p>
     <p>
         Veel succes met de toets, probeer zoveel mogelijk zelf uit te zoeken.<br/>
         Gebruik <a href="https://www.google.com/" target="_blank">Google</a>, <a href="https://laravel.com/docs" target="_blank">de Laravel docs</a>, de code uit eerdere projecten.
